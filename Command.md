@@ -36,7 +36,7 @@ git checkout <commit log number> -- <filename>
 # commit the restored file
 git commit -m '<msg>'
 
-git config user.name justin630297
+git config user.name justin6302971
 git config user.email justin6302971@hotmail.com
 
 ```
