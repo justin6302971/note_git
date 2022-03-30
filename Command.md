@@ -67,6 +67,17 @@ git push origin :feature/branch
 
 # delete local branch
 git branch -d feature/branch
+
+# switching to the local branch and rename it
+git checkout <old_name>
+git branch -m <new_name>
+
+# push the new remote branch
+git push origin -u <new_name>
+
+# delete old remote branch
+git push origin --delete <old_name>
+
 ```
 
 ## Merge branch locally
