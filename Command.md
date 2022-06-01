@@ -39,6 +39,11 @@ git commit -m '<msg>'
 git config user.name justin6302971
 git config user.email justin6302971@hotmail.com
 
+# View existing remotes
+git remote -v
+
+# update remotes
+git remote set-url origin <new_remote_url>
 ```
 
 
@@ -77,6 +82,15 @@ git push origin -u <new_name>
 
 # delete old remote branch
 git push origin --delete <old_name>
+
+#lists branches merged into master
+git branch --merged master 
+
+# lists branches merged into HEAD (i.e. tip of current branch)
+git branch --merged
+
+#lists branches that have not been merged
+git branch --no-merged 
 
 ```
 
@@ -212,6 +226,31 @@ git config user.name <username>
 git config user.email <useremail>
 ```
 
+## clean 
+``` bash
+# check the detail of the file which will be deleted
+git clean -n
+
+# delete untracked files
+git clean -f　　
+```
+
+
+## merge issues
+
+``` bash
+# reset the branch to the status before solving conflicts
+git merge --abort
+
+# save temporary changes
+git stash save
+
+# load temporary changes
+git stash pop
+
+
+```
+
 ## references
 1. [create pull request](https://opensource.com/article/19/7/create-pull-request-github)
 2. [delete branch](https://www.freecodecamp.org/news/how-to-delete-a-git-branch-both-locally-and-remotely/)
@@ -221,3 +260,6 @@ git config user.email <useremail>
 6. [organize commits](https://blog.carbonfive.com/always-squash-and-rebase-your-git-commits/)
 7. [organize commits -2](https://blog.darkthread.net/blog/git-squash-in-vs/)
 8. [git cheetsheet](https://blog.darkthread.net/blog/my-git-cheatsheet/)
+9. [git clean](https://www.796t.com/content/1547528799.html)
+10. [git stash](https://backlog.com/git-tutorial/tw/reference/stash.html)
+11. [git diff](https://ithelp.ithome.com.tw/articles/10135441)
