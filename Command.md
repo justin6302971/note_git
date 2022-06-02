@@ -134,6 +134,12 @@ git log --oneline
 # choose the base commit(the commit you don't want to modify), after the interactive done, the rest of commit should be modified
 git rebase -i <commit_id>  
 
+git reset
+
+git log
+
+git reflog
+
 ```
 
 ## Create pull request
@@ -249,6 +255,7 @@ git stash save
 git stash pop
 
 
+
 ```
 
 ## references
@@ -263,3 +270,5 @@ git stash pop
 9. [git clean](https://www.796t.com/content/1547528799.html)
 10. [git stash](https://backlog.com/git-tutorial/tw/reference/stash.html)
 11. [git diff](https://ithelp.ithome.com.tw/articles/10135441)
+12. [git reflog](https://w3c.hexschool.com/git/10bf7677)
+13. [git tag](https://medium.com/@emmabostian/using-git-tags-to-version-coding-tutorials-cf9ff28fad4f)
