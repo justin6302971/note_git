@@ -36,6 +36,13 @@ git checkout <commit log number> -- <filename>
 # commit the restored file
 git commit -m '<msg>'
 
+# change lastest commit message
+ git commit --amend -m "new message for latest commit" 
+
+# add staging files to latest commit
+git add . 
+git commit --amend --no-edit
+
 git config user.name justin6302971
 git config user.email justin6302971@hotmail.com
 
